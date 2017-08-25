@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.panc.stickheadscrollview.MainActivity">
+
+    <com.panc.stickheadscrollviewlibrary.StickHeadScrollView
+        android:id="@+id/sv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="OTHER LAYOUT"
+                    android:gravity="center"
+                    android:layout_height="match_parent"/>
+                <android.support.design.widget.TabLayout
+                    android:id="@+id/tb"
+                    android:layout_gravity="bottom"
+                    android:background="#4990e2"
+                    app:tabTextColor="#fff"
+                    app:tabSelectedTextColor="#000"
+                    app:tabIndicatorColor="#2c4473"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"/>
+            </FrameLayout>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </com.panc.stickheadscrollviewlibrary.StickHeadScrollView>
+
+</android.support.v4.widget.SwipeRefreshLayout>
