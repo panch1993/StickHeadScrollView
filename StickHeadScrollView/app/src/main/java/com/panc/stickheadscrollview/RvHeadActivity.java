@@ -41,9 +41,13 @@ public class RvHeadActivity extends AppCompatActivity {
             }
         });
 
+        View headView = findViewById(R.id.tv_head);
+        //避免自动滑动到底部
+        headView.setFocusable(true);
+        headView.setFocusableInTouchMode(true);
+        headView.requestFocus();
         //2.set height
         mStickHeadScrollView = (StickHeadScrollView) findViewById(R.id.sv);
-        View headView = findViewById(R.id.tv_head);
         mStickHeadScrollView.resetHeight(headView,recyclerView);
     }
 

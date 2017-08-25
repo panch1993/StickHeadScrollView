@@ -41,6 +41,10 @@ public class VpHeadActivity extends AppCompatActivity {
             }
         });
 
+        //避免自动滑动到底部
+        tabLayout.setFocusable(true);
+        tabLayout.setFocusableInTouchMode(true);
+        tabLayout.requestFocus();
         //2.set height
         mStickHeadScrollView = (StickHeadScrollView) findViewById(R.id.sv);
         mStickHeadScrollView.resetHeight(tabLayout,viewPager);
