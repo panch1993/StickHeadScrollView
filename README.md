@@ -1,3 +1,5 @@
+其它实现方式 [看这个吧](https://github.com/panch1993/My-Library). 
+
 # StickHeadScrollView
 
 ## 固定头部scrollview
